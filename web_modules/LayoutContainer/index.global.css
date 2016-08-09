@@ -1,78 +1,167 @@
-/* Using global sytles is not recommended, prefer local styles via CSS Modules */
-
-/*
- * box model like it should be
- *
- * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
- */
-html { box-sizing: border-box; }
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-/*
- * kill document defaults margin & padding. We all do that all the times, right ?
- */
-html,
 body {
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  max-width: 50em;
+  font-family: "Roboto", sans-serif;
+  padding: 2em 1em;
+  color: #9FA3A7;
+  background-color: #F7F8F9;
 }
 
-/*
- * page styles
- */
-html {
-  min-height: 100%;
-  background: color(#deecf1 a(0.4));
-}
-
-body {
-  font-size: 1rem;
-  line-height: 1.5rem;
-
-  /* system font https://medium.com/designing-medium/system-shock-6b1dc6d6596f */
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-}
-
-/*
- * .phenomic-HeadingAnchor
- *
- * anchors for markdown headings, generated via markdown renderer, so require
- * global styling
- */
-@custom-selector :--headings h1, h2, h3, h4, h5, h6;
-
-:--headings {
-  position: relative;
-}
-
-:root {
-  --phenomic-HeadingAnchor-width: 1.4rem;
-  --phenomic-HeadingAnchor-margin: 0.4rem;
-}
-
-.phenomic-HeadingAnchor {
-  display: block;
-  text-align: center;
-  margin-left: calc(-1 * (var(--phenomic-HeadingAnchor-width) + var(--phenomic-HeadingAnchor-margin)));
-  margin-right: var(--phenomic-HeadingAnchor-margin);
-  width: var(--phenomic-HeadingAnchor-width);
-  line-height: var(--phenomic-HeadingAnchor-width);
-  text-decoration: none;
-
-  opacity: 0.1;
-  transition: opacity 0.2s;
-
-  @nest :--headings:hover & {
-    opacity: 1;
-  }
-}
-
-/* minimal styling, prefer removing this and use local styles */
 a {
-  color: #0e63e3;
+  color: #F38181;
+}
+
+.circleIcons {
+  margin-bottom: 1.5em;
+  margin-left: .5em;
+}
+
+.designItemLeft {
+  /*background-image: url(images/background_pencil.png);*/
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 40%;
+}
+
+.designItemRight {
+  /*background-image: url(images/background_pencil.png);*/
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 40%;
+}
+
+.footerInfo {
+  text-align: center;
+}
+
+.footerInfoMargin {
+  margin-right: 1rem;
+}
+
+.homeHeader {
+  line-height: 1.2;
+  padding: 2em 2em 4em 2em;
+  text-align: center;
+}
+
+.homeHeaderLogo {
+  display: inline-block;
+  vertical-align: top;
+  width: 120px;
+  margin-bottom: 4vw;
+}
+
+.navheader {
+  margin-bottom: 2rem;
+  height: 3rem;
+  border-bottom: 1px solid #CBCDD0;
+}
+
+.navLogo {
+  height: 1.55rem;
+  width: auto;
+}
+
+.nav-link:active, .nav-link:focus, .nav-link:hover {
+  border-bottom: 2px solid #95E1D3;
+  color: #95E1D3;
+  border-radius: 0;
+}
+
+.pageTitle, .projectItemTitle {
+  font-family: "Arvo", serif;
+  color: #212121;
+}
+.pageHeader {
+  margin-bottom: 3em;
+}
+.pageTitle {
+  font-weight: 700;
+  padding-bottom: 1.5rem;
+}
+
+.pageSubTitle {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 2.25rem;
+  letter-spacing: 0.05rem;
+}
+
+.pageSubTitle a {
+  color: #F38181;
+}
+
+.pageSubTitle a:active, .pageSubTitle a:focus, .pageSubTitle a:hover {
+    color: #95E1D3;
+}
+
+.projectImage, .projectItem {
+  margin-bottom: 4em;
+}
+
+.projectImage {
+  border-radius: 6px;
+}
+
+.projectItemTitle {
+  font-size: 1.5rem;
+  margin-bottom: 0.5em;
+  line-height: 2.25rem;
+}
+
+.projectItemType {
+  font-size: 0.75rem;
+  letter-spacing: 0.1rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.projectItemDescription {
+  font-size: 0.75rem;
+  letter-spacing: 0.05rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.socialIcon {
+  height: 1.5rem;
+}
+
+.verticalCenter {
+  padding-top: 50%;
+}
+
+.workCategories {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  padding-top: 4vw;
+  border-top: 1px solid #CBCDD0;
+  border-radius: 0rem;
+}
+
+.workCategoriesHeader {
+  color: #212121;
+  font-family: "Arvo", serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2.25rem;
+  letter-spacing: 0.05rem;
+  padding-bottom: 1.5rem;
+}
+
+.workCategorieTitle {
+  color: #212121;
+  font-family: "Arvo", serif;
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+.workType {
+  margin-bottom: 3rem;
+}
+
+.workType a:active, .workType a:focus, .workType a:hover {
+    color: #95E1D3;
 }

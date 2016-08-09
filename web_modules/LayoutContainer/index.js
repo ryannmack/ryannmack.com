@@ -4,6 +4,7 @@ import Helmet from "react-helmet"
 import Header from "../Header"
 import Footer from "../Footer"
 
+import "./bootstrap.css"
 import "./index.global.css"
 import styles from "./index.css"
 
@@ -34,6 +35,12 @@ export default class Layout extends Component {
             },
             { property: "og:site_name", content: pkg.name },
             { name: "twitter:site", content: `@${ pkg.twitter }` },
+          ] }
+          link={ [
+            { rel: "stylesheet",
+              href: "https://fonts.googleapis.com/css?family=Montserrat:700,400|Arvo700,400|Roboto:400,300", // eslint-disable-line max-len
+              type: "text/css",
+            },
           ] }
           script={ [
             { src: "https://cdn.polyfill.io/v2/polyfill.min.js" },
