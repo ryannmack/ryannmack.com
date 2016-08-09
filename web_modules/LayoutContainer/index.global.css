@@ -3,28 +3,28 @@ body {
   max-width: 50em;
   font-family: "Roboto", sans-serif;
   padding: 2em 1em;
-  color: #9FA3A7;
-  background-color: #F7F8F9;
+  color: #9fa3a7;
+  background-color: #f7f8f9;
 }
 
 a {
-  color: #F38181;
+  color: #f38181;
 }
 
 .circleIcons {
   margin-bottom: 1.5em;
-  margin-left: .5em;
+  margin-left: 0.5em;
 }
 
 .designItemLeft {
-  /*background-image: url(images/background_pencil.png);*/
+  /* background-image: url(images/background_pencil.png); */
   background-repeat: no-repeat;
   background-position: left center;
   background-size: 40%;
 }
 
 .designItemRight {
-  /*background-image: url(images/background_pencil.png);*/
+  /* background-image: url(images/background_pencil.png); */
   background-repeat: no-repeat;
   background-position: right center;
   background-size: 40%;
@@ -40,7 +40,7 @@ a {
 
 .homeHeader {
   line-height: 1.2;
-  padding: 2em 2em 4em 2em;
+  padding: 2em 2em 4em;
   text-align: center;
 }
 
@@ -54,7 +54,7 @@ a {
 .navheader {
   margin-bottom: 2rem;
   height: 3rem;
-  border-bottom: 1px solid #CBCDD0;
+  border-bottom: 1px solid #cbcdd0;
 }
 
 .navLogo {
@@ -62,19 +62,24 @@ a {
   width: auto;
 }
 
-.nav-link:active, .nav-link:focus, .nav-link:hover {
-  border-bottom: 2px solid #95E1D3;
-  color: #95E1D3;
+.nav-link:active,
+.nav-link:focus,
+.nav-link:hover {
+  border-bottom: 2px solid #95e1d3;
+  color: #95e1d3;
   border-radius: 0;
 }
 
-.pageTitle, .projectItemTitle {
+.pageTitle,
+.projectItemTitle {
   font-family: "Arvo", serif;
   color: #212121;
 }
+
 .pageHeader {
   margin-bottom: 3em;
 }
+
 .pageTitle {
   font-weight: 700;
   padding-bottom: 1.5rem;
@@ -88,14 +93,17 @@ a {
 }
 
 .pageSubTitle a {
-  color: #F38181;
+  color: #f38181;
 }
 
-.pageSubTitle a:active, .pageSubTitle a:focus, .pageSubTitle a:hover {
-    color: #95E1D3;
+.pageSubTitle a:active,
+.pageSubTitle a:focus,
+.pageSubTitle a:hover {
+  color: #95e1d3;
 }
 
-.projectImage, .projectItem {
+.projectImage,
+.projectItem {
   margin-bottom: 4em;
 }
 
@@ -134,8 +142,8 @@ a {
   margin-bottom: 1.5rem;
   text-align: center;
   padding-top: 4vw;
-  border-top: 1px solid #CBCDD0;
-  border-radius: 0rem;
+  border-top: 1px solid #cbcdd0;
+  border-radius: 0;
 }
 
 .workCategoriesHeader {
@@ -151,7 +159,7 @@ a {
 .workCategorieTitle {
   color: #212121;
   font-family: "Arvo", serif;
-  font-size: .75rem;
+  font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.1rem;
   margin-bottom: 1.5rem;
@@ -162,6 +170,8 @@ a {
   margin-bottom: 3rem;
 }
 
-.workType a:active, .workType a:focus, .workType a:hover {
-    color: #95E1D3;
+.workType a:active,
+.workType a:focus,
+.workType a:hover {
+  color: #95e1d3;
 }
