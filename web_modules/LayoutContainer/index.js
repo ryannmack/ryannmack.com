@@ -11,6 +11,7 @@ export default class Layout extends Component {
 
   static propTypes = {
     children: PropTypes.oneOfType([ PropTypes.array, PropTypes.object ]),
+    location: PropTypes.object,
   };
 
   static contextTypes = {
@@ -21,6 +22,7 @@ export default class Layout extends Component {
     const {
       pkg,
     } = this.context.metadata
+    const isHome = this.props.location.pathname === "/"
 
     return (
       <div className={ styles.layout }>
@@ -46,7 +48,7 @@ export default class Layout extends Component {
         />
         <style>{ "@-ms-viewport { width: device-width; }" }</style>
 
-        <Header />
+        { !isHome && <Header /> }
         <div className={ styles.content }>
           { this.props.children }
         </div>
