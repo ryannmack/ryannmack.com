@@ -4,7 +4,7 @@ import Helmet from "react-helmet"
 import Header from "../Header"
 import Footer from "../Footer"
 
-import "./bootstrap.css"
+import "./bootstrap.global.css"
 import "./index.global.css"
 import styles from "./index.css"
 
