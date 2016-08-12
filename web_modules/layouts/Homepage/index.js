@@ -2,6 +2,7 @@ import React, { Component, PropTypes } from "react"
 import Helmet from "react-helmet"
 import invariant from "invariant"
 import { joinUri } from "phenomic"
+import { Link } from "react-router"
 
 class Homepage extends Component {
   render() {
@@ -42,8 +43,8 @@ class Homepage extends Component {
     return (
       <div>
         <Helmet
-          title={ metaTitle }
           meta={ meta }
+          title={ metaTitle }
         />
       <div>
         <div className="homeHeader">
@@ -67,15 +68,15 @@ class Homepage extends Component {
           </h2>
           <div className="row">
             <div className="col-lg-4 workType">
-              <a href="portfolio.html">
+              <Link to="/design">
                 <img
-                  className="circleIcons"
-                  src="images/design_icon.png"
                   alt="Pencil Icon"
-                  width={ 70 }
+                  className="circleIcons"
                   height={ 60 }
+                  src="images/design_icon.png"
+                  width={ 70 }
                 />
-              </a>
+              </Link>
               <h3 className="workCategorieTitle">Design</h3>
               <p>
                 7 Years in All Things Design
@@ -84,34 +85,34 @@ class Homepage extends Component {
               </p>
             </div>
             <div className="col-lg-4 workType">
-              <a href="portfolio.html">
+              <Link to="/development">
                 <img
-                  className="circleIcons"
-                  src="images/front_design_icon.png"
                   alt="Code Icon"
-                  width={ 70 }
+                  className="circleIcons"
                   height={ 60 }
+                  src="images/front_design_icon.png"
+                  width={ 70 }
                 />
-              </a>
+              </Link>
               <h3 className="workCategorieTitle">
                 Front-End Development
               </h3>
               <p>
                 Over 100 GitHub Commits
                 <br />
-                Building Websites - <a href="#">like this one</a>
+                Building Websites - <Link to="/TODO">like this one</Link>
               </p>
             </div>
             <div className="col-lg-4 workType">
-              <a href="portfolio.html">
+              <Link to="/project-management">
                 <img
-                  className="circleIcons"
-                  src="images/project_management_icon.png"
                   alt="Monitor Icon"
-                  width={ 70 }
+                  className="circleIcons"
                   height={ 60 }
+                  src="images/project_management_icon.png"
+                  width={ 70 }
                 />
-              </a>
+              </Link>
               <h3 className="workCategorieTitle">
                 Project Management
               </h3>
