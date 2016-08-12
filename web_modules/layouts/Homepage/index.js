@@ -4,6 +4,11 @@ import invariant from "invariant"
 import { joinUri } from "phenomic"
 import { Link } from "react-router"
 
+import rmLogo from "../../images/rm_logo.png"
+import designIcon from "../../images/design_icon.png"
+import devIcon from "../../images/development_icon.png"
+import pmIcon from "../../images/project_management_icon.png"
+
 class Homepage extends Component {
   render() {
     const { props, context } = this
@@ -51,13 +56,13 @@ class Homepage extends Component {
           <img
             alt="Ryann Mack Logo"
             className="homeHeaderLogo"
-            src="images/rm_logo.png"
+            src={ rmLogo }
           />
           <h1 className="pageTitle">
             I am Ryann Mack, a passionate designer and developer.
           </h1>
           <p className="pageSubTitle">
-            <a href="mailto:ryann@ryannmack.com">
+            <a href="mailto:hi@ryannmack.com">
               Contact me
             </a> if you want to work together. Cheers!
           </p>
@@ -73,7 +78,7 @@ class Homepage extends Component {
                   alt="Pencil Icon"
                   className="circleIcons"
                   height={ 60 }
-                  src="images/design_icon.png"
+                  src={ designIcon }
                   width={ 70 }
                 />
               </Link>
@@ -90,7 +95,7 @@ class Homepage extends Component {
                   alt="Code Icon"
                   className="circleIcons"
                   height={ 60 }
-                  src="images/front_design_icon.png"
+                  src={ devIcon }
                   width={ 70 }
                 />
               </Link>
@@ -109,7 +114,7 @@ class Homepage extends Component {
                   alt="Monitor Icon"
                   className="circleIcons"
                   height={ 60 }
-                  src="images/project_management_icon.png"
+                  src={ pmIcon }
                   width={ 70 }
                 />
               </Link>

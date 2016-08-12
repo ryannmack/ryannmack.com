@@ -1,6 +1,8 @@
 import React, { Component, PropTypes } from "react"
 import { Link } from "react-router"
 
+import rmLogo from "../images/rm_logo.png"
+
 export default class Header extends Component {
 
   static contextTypes = {
@@ -39,7 +41,7 @@ export default class Header extends Component {
             <li className="nav-item">
               <a
                 className="nav-link"
-                href="mailto:ryann@ryannmack.com"
+                href="mailto:hi@ryannmack.com"
               >
                 Contact
               </a>
@@ -50,7 +52,7 @@ export default class Header extends Component {
           <img
             alt="Ryann Mack Logo"
             className="navLogo"
-            src="images/rm_logo.png"
+            src={ rmLogo }
           />
         </Link>
       </div>
