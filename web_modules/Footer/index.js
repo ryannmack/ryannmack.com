@@ -11,7 +11,12 @@ export default class Footer extends Component {
     return (
       <footer className="container">
         <p className="footerInfo">
-          <span className="footerInfoMargin">hi@ryannmack.com</span>
+          <a
+            className="footerInfoMargin footerEmail"
+            href="mailto:hi@ryannmack.com"
+          >
+            hi@ryannmack.com
+          </a>
           <a href="https://twitter.com/ryann_mack" target="_blank">
             <img
               alt="Twitter Logo"
