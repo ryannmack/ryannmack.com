@@ -62,17 +62,24 @@ a {
   width: auto;
 }
 
+.nav-active,
+.nav-link.active,
 .nav-link:focus,
 .nav-link:hover {
+  background-color: transparent;
   border-bottom: 2px solid #95e1d3;
+  border-radius: 0;
   color: #95e1d3;
+}
+
+.nav-pills .nav-link {
   border-radius: 0;
 }
 
 .pageTitle,
 .projectItemTitle {
-  font-family: "Arvo", serif;
   color: #212121;
+  font-family: "Arvo", serif;
 }
 
 .pageHeader {

@@ -16,13 +16,17 @@ export default class Header extends Component {
         <nav>
           <ul className="nav nav-pills pull-xs-right">
             <li className="nav-item">
-              <Link activeClassName="active" className="nav-link" to="/design">
+              <Link
+                activeClassName="nav-active"
+                className="nav-link"
+                to="/design"
+              >
                 Design
               </Link>
             </li>
             <li className="nav-item">
               <Link
-                activeClassName="active"
+                activeClassName="nav-active"
                 className="nav-link"
                 to="/development"
               >
@@ -31,7 +35,7 @@ export default class Header extends Component {
             </li>
             <li className="nav-item">
               <Link
-                activeClassName="active"
+                activeClassName="nav-active"
                 className="nav-link"
                 to="/project-management"
               >
