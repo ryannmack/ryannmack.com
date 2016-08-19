@@ -11,6 +11,11 @@ a {
   color: #f38181;
 }
 
+a:hover {
+  color: #95e1d3;
+  text-decoration: none;
+}
+
 .circleIcons {
   margin-bottom: 1.5em;
   margin-left: 0.5em;
@@ -28,6 +33,14 @@ a {
   background-repeat: no-repeat;
   background-position: right center;
   background-size: 40%;
+}
+
+.footerEmail.active,
+.footerEmail:focus,
+.footerEmail:hover {
+  border-bottom: 2px solid #95e1d3;
+  color: #95e1d3;
+  text-decoration: none;
 }
 
 .footerInfo {
@@ -135,8 +148,8 @@ a {
   margin-bottom: 1.5rem;
 }
 
-.socialIcon {
-  height: 1.5rem;
+svg {
+  vertical-align: bottom;
 }
 
 .verticalCenter {
