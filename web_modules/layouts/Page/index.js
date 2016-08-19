@@ -45,13 +45,17 @@ class Page extends Component {
     return (
       <div>
         <Helmet
-          title={ metaTitle }
           meta={ meta }
+          title={ metaTitle }
         />
 
         {
           head.title &&
-          <h1>{ head.title }</h1>
+          <div className="pageHeader">
+            <h1 className="pageTitle text-xs-center">
+              { head.title }
+            </h1>
+          </div>
         }
         { header }
         <BodyContainer>{ body }</BodyContainer>
