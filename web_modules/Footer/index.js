@@ -42,7 +42,7 @@ export default class Footer extends Component {
               width="24px"
             />
           </a>
-          // REMOVE 404 and Loading for testing.
+          {/* REMOVE Below: 404 and Loading for testing.*/}
           <p>
             <Link
               className={ styles.link }
