@@ -37,12 +37,16 @@
     ],
     "rules": {
       "react/prefer-stateless-function": 0,
-      "react/jsx-no-literals": 0
+      "react/jsx-no-literals": 0,
+      "react/jsx-sort-props": 1
     }
   },
   "eslintConfigRuleReact/prefer-stateless-function": "https://github.com/MoOx/phenomic/issues/46",
   "stylelint": {
-    "extends": "stylelint-config-standard"
+    "extends": "stylelint-config-standard",
+    "rules": {
+      "declaration-block-properties-order": "alphabetical"
+    }
   },
   "devDependencies": {
     "babel-cli": "^6.3.17",
