@@ -9,6 +9,7 @@ import PageError from "../layouts/PageError"
 import PageLoading from "../layouts/PageLoading"
 import Homepage from "../layouts/Homepage"
 import Post from "../layouts/Post"
+import Design from "../layouts/Design"
 
 class PageContainer extends Component {
   render() {
@@ -17,6 +18,7 @@ class PageContainer extends Component {
       <PhenomicPageContainer
         { ...props }
         layouts={ {
+          Design,
           Page,
           PageError,
           PageLoading,

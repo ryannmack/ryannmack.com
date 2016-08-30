@@ -9,6 +9,7 @@ class Post extends Component {
   render() {
     const { props } = this
     const { head } = props
+    const { image } = head
 
     const pageDate = head.date ? new Date(head.date) : null
 
@@ -17,12 +18,13 @@ class Post extends Component {
         { ...props }
         header={
           <header>
-          {
-            pageDate &&
-            <time key={ pageDate.toISOString() }>
-              { pageDate.toDateString() }
-            </time>
-          }
+            <img src={ `/assets/${image}` } />
+            {
+              pageDate &&
+              <time key={ pageDate.toISOString() }>
+                { pageDate.toDateString() }
+              </time>
+            }
           </header>
         }
       />

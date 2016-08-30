@@ -34,11 +34,21 @@ class Page extends Component {
         property: "og:url",
         content: joinUri(process.env.PHENOMIC_USER_URL, __url),
       },
+      {
+        property: "og:image",
+        content: joinUri(process.env.PHENOMIC_USER_URL,
+          `/assets/${head.image}`),
+      },
       { property: "og:description", content: head.description },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:title", content: metaTitle },
       { name: "twitter:creator", content: `@${ pkg.twitter }` },
       { name: "twitter:description", content: head.description },
+      {
+        property: "twitter:image",
+        content: joinUri(process.env.PHENOMIC_USER_URL,
+          `/assets/${head.image}`),
+      },
       { name: "description", content: head.description },
     ]
 
