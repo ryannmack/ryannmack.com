@@ -18,7 +18,7 @@ class Post extends Component {
         { ...props }
         header={
           <header>
-            <img src={ `/assets/${image}` } />
+
             {
               pageDate &&
               <time key={ pageDate.toISOString() }>
@@ -26,6 +26,9 @@ class Post extends Component {
               </time>
             }
           </header>
+        }
+        footer={
+          <img src={ `/assets/${image}` } />
         }
       />
     )
